@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_marginBottom="15dp"
+    android:id="@+id/layout_item"
+    android:scrollbars="vertical"
+    android:hardwareAccelerated="true"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:hardwareAccelerated="true"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:visibility="visible"
+        android:textSize="25sp"
+        android:ellipsize="end"
+        android:id="@+id/name_of_note"
+        android:maxLines="1"
+        android:background="#25FFFFFF"
+        android:padding="10sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/delete_layout"
+        android:orientation="horizontal"
+        android:layout_height="90dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:text="Cancel"
+            android:hardwareAccelerated="true"
+            android:textColor="#9000ffff"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:ellipsize="end"
+            android:paddingRight="10dp"
+            android:onClick="cancel"
+            android:paddingLeft="10dp"
+            android:id="@+id/cancel_item"
+            android:maxLines="1"
+            android:background="#0500d4ff"
+            android:padding="10sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:text="DELETE"
+            android:hardwareAccelerated="true"
+            android:textColor="#90ff0000"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:ellipsize="end"
+            android:id="@+id/delete_item"
+            android:maxLines="1"
+            android:background="#05ff0000"
+            android:padding="10sp"/>
+    </LinearLayout>
+
+</LinearLayout>

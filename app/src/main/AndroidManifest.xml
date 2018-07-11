@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dmitry.note">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:screenOrientation="portrait"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".One_note"
+            android:label="@string/title_activity_one_note"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".Activity_create_note" />
+        <activity
+            android:name=".Main_list"
+            android:label="@string/title_activity_main_list"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Control" />
+        <activity
+            android:name=".Private_list"
+            android:label="@string/title_activity_private_list"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".CreatePrNote" />
+        <activity android:name=".CreatePassword"></activity>
+        <activity android:name=".ChangePassword"></activity>
+    </application>
+
+</manifest>
